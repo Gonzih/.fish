@@ -3,4 +3,8 @@ bind \ch history-search-forward
 bind \cd backward-word
 bind \cn forward-word
 bind \cp yank
-bind \ce 'exit'
+
+bind \ed backward-kill-line
+bind \en kill-line
+
+bind \ed 'exit'
