@@ -1,3 +1,3 @@
 function g
-    git
+    git $argv
 end
