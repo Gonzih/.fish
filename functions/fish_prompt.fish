@@ -23,6 +23,8 @@ set -g __fish_git_prompt_showdirtystate 'yes'
 set -g __fish_git_prompt_char_dirtystate '±'
 set -g __fish_git_prompt_char_cleanstate ''
 
+set -g theme_display_user "yes"
+
 function parse_git_dirty
   set -l submodule_syntax
   set submodule_syntax "--ignore-submodules=dirty"
@@ -88,10 +90,12 @@ end
 # ===========================
 
 function prompt_user -d "Display actual user if different from $default_user"
+
   if [ "$theme_display_user" = "yes" ]
     if [ "$USER" != "$default_user" -o -n "$SSH_CLIENT" ]
-      set USER_PROMPT (whoami)@(hostname)
-      prompt_segment black yellow $USER_PROMPT
+      prompt_segment black white (whoami)
+      prompt_segment white black λ
+      prompt_segment black white (hostname)
     end
   end
 end
@@ -99,8 +103,6 @@ end
 function prompt_dir -d "Display the actual directory"
   prompt_segment blue black (prompt_pwd)
 end
-
-
 
 function prompt_git -d "Display the actual git state"
   set -l ref
