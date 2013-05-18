@@ -4,21 +4,21 @@ set -g __fish_zypper_all_commands help shell sh repos lr addrepo ar removerepo r
 set -g __fish_zypper_pkg_commands in install rm remove
 
 function __fish_zypper_cmd_in_array
-    for i in (commandline -pco)
-        if contains $i $argv
-            return 0
-        end
-    end
+	for i in (commandline -pco)
+		if contains $i $argv
+			return 0
+		end
+	end
 
-    return 1
+	return 1
 end
 
 function __fish_zypper_no_subcommand
-    not __fish_zypper_cmd_in_array $__fish_zypper_all_commands
+	not __fish_zypper_cmd_in_array $__fish_zypper_all_commands
 end
 
 function __fish_zypper_use_pkg
-    __fish_zypper_cmd_in_array $__fish_zypper_pkg_commands
+	__fish_zypper_cmd_in_array $__fish_zypper_pkg_commands
 end
 
 complete -n '__fish_zypper_use_pkg' -c zypper -a '(__fish_print_packages)' --description 'Package'
