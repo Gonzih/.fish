@@ -23,7 +23,7 @@ set -g __fish_git_prompt_showdirtystate 'yes'
 set -g __fish_git_prompt_char_dirtystate '±'
 set -g __fish_git_prompt_char_cleanstate ''
 
-set -g theme_display_user "yes"
+set -g theme_display_user "no"
 
 function parse_git_dirty
   set -l submodule_syntax
