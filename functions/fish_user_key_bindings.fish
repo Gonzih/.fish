@@ -7,4 +7,4 @@ bind \cp yank
 bind \ed backward-kill-line
 bind \en kill-line
 
-bind \eq 'exit'
+bind \ec 'exit'
