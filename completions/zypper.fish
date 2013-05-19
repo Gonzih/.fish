@@ -1,11 +1,13 @@
 # completion for zypper
 
 set -g __fish_zypper_all_commands help shell sh repos lr addrepo ar removerepo rr renamerepo nr modifyrepo mr refresh ref clean services ls addservice as modifyservice ms removeservice rs refresh-services refs install in remove rm verify ve source-install si install-new-recommends inr update up list-updates lu patch list-patches lp dist-upgrade dup patch-check pchk search se info if patch-info pattern-info product-info patches pch packages pa patterns pt products pd what-provides wp addlock al removelock rl locks ll cleanlocks cl versioncmp vcmp targetos tos licenses source-download
-set -g __fish_zypper_pkg_commands in install rm remove
+set -g __fish_zypper_pkg_commands in install rm remove info in addlock al removelock rl source-install si
 
 function __fish_zypper_cmd_in_array
 	for i in (commandline -pco)
-		if contains $i $argv
+		# -- is used to provide no options for contains
+		# (if $i is equal to --optname without -- will be error)
+		if contains -- $i $argv
 			return 0
 		end
 	end
@@ -69,32 +71,32 @@ complete -f -n '__fish_zypper_no_subcommand' -c zypper -a 'targetos tos'        
 complete -f -n '__fish_zypper_no_subcommand' -c zypper -a 'licenses'                   --description 'Print report about licenses and EULAs of installed packages'
 complete -f -n '__fish_zypper_no_subcommand' -c zypper -a 'source-download'            --description 'Download source rpms for all installed packages to a local directory'
 
-complete -c zypper -l help -s h            --description 'Help'
-complete -c zypper -l version -s V         --description 'Output the version number'
-complete -c zypper -l config -s c          --description 'Use specified config file instead of the default'
-complete -c zypper -l quiet -s q           --description 'Suppress normal output, print only error messages'
-complete -c zypper -l verbose -s v         --description 'Increase verbosity'
-complete -c zypper -l no-abbrev -s A       --description 'Do not abbreviate text in tables'
-complete -c zypper -l table-style -s s     --description 'Table style (integer)'
-complete -c zypper -l rug-compatible -s r  --description 'Turn on rug compatibility'
-complete -c zypper -l non-interactive -s n --description 'Do not ask anything, use default answers automatically'
-complete -c zypper -l xmlout -s x          --description 'Switch to XML output'
-complete -c zypper -l ignore-unknown -s i  --description 'Ignore unknown packages'
-complete -c zypper -l plus-repo -s p       --description 'Use an additional repository'
-complete -c zypper -l reposd-dir -s D      --description 'Use alternative repository definition file directory'
-complete -c zypper -l cache-dir -s C       --description 'Use alternative directory for all caches'
-complete -c zypper -l root -s R            --description 'Operate on a different root directory'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l help -s h            --description 'Help'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l version -s V         --description 'Output the version number'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l config -s c          --description 'Use specified config file instead of the default'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l quiet -s q           --description 'Suppress normal output, print only error messages'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l verbose -s v         --description 'Increase verbosity'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l no-abbrev -s A       --description 'Do not abbreviate text in tables'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l table-style -s s     --description 'Table style (integer)'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l rug-compatible -s r  --description 'Turn on rug compatibility'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l non-interactive -s n --description 'Do not ask anything, use default answers automatically'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l xmlout -s x          --description 'Switch to XML output'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l ignore-unknown -s i  --description 'Ignore unknown packages'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l plus-repo -s p       --description 'Use an additional repository'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l reposd-dir -s D      --description 'Use alternative repository definition file directory'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l cache-dir -s C       --description 'Use alternative directory for all caches'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l root -s R            --description 'Operate on a different root directory'
 
-complete -c zypper -l non-interactive-include-reboot-patches --description 'Do not treat patches as interactive, which have the rebootSuggested-flag set'
-complete -c zypper -l no-gpg-checks                          --description 'Ignore GPG check failures and continue'
-complete -c zypper -l gpg-auto-import-keys                   --description 'Automatically trust and import new repository signing keys'
-complete -c zypper -l disable-repositories                   --description 'Do not read meta-data from repositories'
-complete -c zypper -l no-refresh                             --description 'Do not refresh the repositories'
-complete -c zypper -l no-cd                                  --description 'Ignore CD/DVD repositories'
-complete -c zypper -l no-remote                              --description 'Ignore remote repositories'
-complete -c zypper -l disable-system-resolvables             --description 'Do not read installed packages'
-complete -c zypper -l promptids                              --description 'Output a list of zypper user prompts'
-complete -c zypper -l userdata                               --description 'User defined transaction id used in history and plugins'
-complete -c zypper -l raw-cache-dir                          --description 'Use alternative raw meta-data cache directory'
-complete -c zypper -l solv-cache-dir                         --description 'Use alternative solv file cache directory'
-complete -c zypper -l pkg-cache-dir                          --description 'Use alternative package cache directory'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l non-interactive-include-reboot-patches --description 'Do not treat patches as interactive, which have the rebootSuggested-flag set'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l no-gpg-checks                          --description 'Ignore GPG check failures and continue'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l gpg-auto-import-keys                   --description 'Automatically trust and import new repository signing keys'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l disable-repositories                   --description 'Do not read meta-data from repositories'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l no-refresh                             --description 'Do not refresh the repositories'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l no-cd                                  --description 'Ignore CD/DVD repositories'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l no-remote                              --description 'Ignore remote repositories'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l disable-system-resolvables             --description 'Do not read installed packages'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l promptids                              --description 'Output a list of zypper user prompts'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l userdata                               --description 'User defined transaction id used in history and plugins'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l raw-cache-dir                          --description 'Use alternative raw meta-data cache directory'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l solv-cache-dir                         --description 'Use alternative solv file cache directory'
+complete -c zypper -n '__fish_zypper_no_subcommand' -l pkg-cache-dir                          --description 'Use alternative package cache directory'
