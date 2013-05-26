@@ -28,4 +28,4 @@ SET fish_pager_color_completion:normal
 SET fish_pager_color_description:555\x1eyellow
 SET fish_pager_color_prefix:cyan
 SET fish_pager_color_progress:cyan
-SET fish_user_paths:/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/X11R6/bin\x1e/home/gnzh/\x2ecabal/bin\x1e\x2e/\x2ebin\x1e\x2e/\x2escript\x1e/home/gnzh/bin\x1e/sbin\x1e/usr/sbin/\x1e/usr/local/sbin/\x1e/opt/cross/bin/\x1e/home/gnzh/\x2erbenv/bin\x1e/home/gnzh/\x2erbenv/shims/
+SET fish_user_paths:/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/X11R6/bin\x1e/home/gnzh/\x2ecabal/bin\x1e\x2e/\x2ebin\x1e\x2e/\x2escript\x1e/home/gnzh/bin\x1e/sbin\x1e/usr/sbin/\x1e/usr/local/sbin/\x1e/opt/cross/bin/\x1e/home/gnzh/\x2erbenv/bin\x1e/home/gnzh/\x2erbenv/shims/\x1e/usr/local/heroku/bin
