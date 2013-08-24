@@ -8,3 +8,5 @@ bind \ed backward-kill-line
 bind \en kill-line
 
 bind \ec 'exit'
+
+bind \el 'l'
