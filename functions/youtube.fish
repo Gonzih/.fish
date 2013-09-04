@@ -1,3 +1,3 @@
 function youtube
-	youtube-dl -o '%(stitle)s.%(ext)s' $argv
+	youtube-dl -o '%(title)s.%(ext)s' --restrict-filenames $argv
 end
