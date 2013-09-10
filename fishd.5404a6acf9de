@@ -2,8 +2,10 @@
 # Do NOT edit it directly, your changes will be overwritten.
 SET BROWSER:firefox
 SET EDITOR:vim
+SET_EXPORT LC_ALL:en\x5fUS\x2eutf8
 SET PAGER:vimpager
 SET PATH:/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/X11R6/bin
+SET_EXPORT XDG_CONFIG_HOME:/home/gnzh/\x2econfig
 SET __fish_init_1_22_0:\x1d
 SET __fish_init_1_50_0:\x1d
 SET fish_color_autosuggestion:555\x1eyellow
