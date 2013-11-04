@@ -2,6 +2,11 @@
 # Do NOT edit it directly, your changes will be overwritten.
 SET BROWSER:firefox
 SET EDITOR:vim
+SET_EXPORT GOARCH:amd64
+SET_EXPORT GOBIN:/home/gnzh/go/bin
+SET_EXPORT GOOS:linux
+SET_EXPORT GOPATH:/home/gnzh/go\x3a/usr/lib64/go/contrib
+SET_EXPORT GOROOT:/usr/lib64/go
 SET_EXPORT LC_ALL:en\x5fUS\x2eutf8
 SET PAGER:vimpager
 SET PATH:/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/X11R6/bin
