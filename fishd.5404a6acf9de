@@ -10,9 +10,11 @@ SET_EXPORT GOROOT:/usr/lib64/go
 SET_EXPORT LC_ALL:en\x5fUS\x2eutf8
 SET PAGER:vimpager
 SET PATH:/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/X11R6/bin
+SET_EXPORT TERM:xterm\x2d256color
 SET_EXPORT XDG_CONFIG_HOME:/home/gnzh/\x2econfig
 SET __fish_init_1_22_0:\x1d
 SET __fish_init_1_50_0:\x1d
+SET __prompt_initialized_2:\x1d
 SET fish_color_autosuggestion:555\x1eyellow
 SET fish_color_command:005fd7\x1epurple
 SET fish_color_comment:red
@@ -21,6 +23,7 @@ SET fish_color_cwd_root:red
 SET fish_color_error:red\x1e\x2d\x2dbold
 SET fish_color_escape:cyan
 SET fish_color_history_current:cyan
+SET fish_color_host:\x2do\x1ecyan
 SET fish_color_match:cyan
 SET fish_color_normal:normal
 SET fish_color_operator:cyan
@@ -28,6 +31,8 @@ SET fish_color_param:00afff\x1ecyan
 SET fish_color_quote:brown
 SET fish_color_redirection:normal
 SET fish_color_search_match:\x2d\x2dbackground\x3dpurple
+SET fish_color_status:red
+SET fish_color_user:\x2do\x1egreen
 SET fish_color_valid_path:\x2d\x2dunderline
 SET fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x1b\x5b32mhelp\x1b\x5b30m\x1b\x28B\x1b\x5bm\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
 SET fish_key_bindings:fish\x5fdefault\x5fkey\x5fbindings
@@ -35,4 +40,4 @@ SET fish_pager_color_completion:normal
 SET fish_pager_color_description:555\x1eyellow
 SET fish_pager_color_prefix:cyan
 SET fish_pager_color_progress:cyan
-SET fish_user_paths:/home/gnzh/go\x1e/usr/lib64/go/contrib\x1e/home/gnzh/\x2ecabal/bin\x1e\x2e/\x2ebin\x1e\x2e/\x2escript\x1e/home/gnzh/bin\x1e/sbin\x1e/usr/sbin/\x1e/usr/local/sbin/\x1e/opt/cross/bin/\x1e/home/gnzh/\x2erbenv/bin\x1e/home/gnzh/\x2erbenv/shims/\x1e/usr/local/heroku/bin\x1e/usr/local/bin\x1e/usr/bin\x1e/bin\x1e/usr/X11R6/bin\x1e/home/gnzh/go/bin
+SET fish_user_paths:/home/gnzh/\x2ecabal/bin\x1e\x2e/\x2ebin\x1e\x2e/\x2escript\x1e/home/gnzh/bin\x1e/home/gnzh/\x2erbenv/bin\x1e/home/gnzh/\x2erbenv/shims/\x1e/sbin/
