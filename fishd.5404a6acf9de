@@ -40,4 +40,4 @@ SET fish_pager_color_completion:normal
 SET fish_pager_color_description:555\x1eyellow
 SET fish_pager_color_prefix:cyan
 SET fish_pager_color_progress:cyan
-SET fish_user_paths:/home/gnzh/\x2ecabal/bin\x1e\x2e/\x2ebin\x1e\x2e/\x2escript\x1e/home/gnzh/bin\x1e/home/gnzh/\x2erbenv/bin\x1e/home/gnzh/\x2erbenv/shims/\x1e/sbin/
+SET fish_user_paths:/sbin\x1e/home/gnzh/android\x2dsdk\x2dlinux/build\x2dtools/18\x2e1\x2e1/\x1e/home/gnzh/android\x2dsdk\x2dlinux/tools/\x1e/usr/sbin/\x1e/home/gnzh/\x2ecabal/bin\x1e\x2e/\x2ebin\x1e\x2e/\x2escript\x1e/home/gnzh/bin\x1e/usr/local/heroku/bin/
