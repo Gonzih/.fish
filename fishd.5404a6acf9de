@@ -2,7 +2,7 @@
 # Do NOT edit it directly, your changes will be overwritten.
 SET_EXPORT ANDROID_HOME:/home/gnzh/android\x2dsdk\x2dlinux/
 SET BROWSER:firefox
-SET EDITOR:vim
+SET_EXPORT EDITOR:vim
 SET_EXPORT GOARCH:amd64
 SET_EXPORT GOBIN:/home/gnzh/go/bin
 SET_EXPORT GOOS:linux
