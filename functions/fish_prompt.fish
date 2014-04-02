@@ -149,7 +149,7 @@ function prompt_vi_mode -d 'Displays the current vi mode'
     case insert
       prompt_segment magenta black "I"
     case visual
-      prompt_segment brown black "V"
+      prompt_segment purple black "V"
   end
 end
 
