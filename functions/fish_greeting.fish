@@ -1,3 +1,5 @@
 function fish_greeting
-	rand-tybg
+	if test $TERM != "screen-256color"
+		rand-tybg
+	end
 end
