@@ -141,6 +141,18 @@ function prompt_status -d "the symbols for a non zero exit status, root and back
     end
 end
 
+
+function prompt_vi_mode -d 'Displays the current vi mode'
+  switch $fish_bind_mode
+    case default
+      prompt_segment red black "N"
+    case insert
+      prompt_segment cyan black "I"
+    case visual
+      prompt_segment magenta black "V"
+  end
+end
+
 # ===========================
 # Apply theme
 # ===========================
@@ -151,5 +163,6 @@ function fish_prompt
   prompt_user
   prompt_dir
   prompt_git
+  prompt_vi_mode
   prompt_finish
 end
