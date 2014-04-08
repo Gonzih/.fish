@@ -53,4 +53,5 @@ function fish_user_key_bindings
 	bind -M visual n forward-char
 
 	bind ZZ exit
+	bind ZQ exit
 end
