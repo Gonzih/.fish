@@ -54,4 +54,7 @@ function fish_user_key_bindings
 
 	bind ZZ exit
 	bind ZQ exit
+
+	bind l clear force-repaint
+	bind -M visual l clear force-repaint
 end
