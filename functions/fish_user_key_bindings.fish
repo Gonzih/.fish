@@ -26,9 +26,7 @@ function fish_user_key_bindings
 	bind n forward-char
 
 	bind jj kill-whole-line
-	bind J kill-line
-	bind j\x24 kill-line
-	bind j\x5e backward-kill-line
+	bind J end-of-line delete-char
 	bind jw kill-word
 	bind jW kill-word
 	bind jiw forward-char forward-char backward-word kill-word
@@ -44,6 +42,12 @@ function fish_user_key_bindings
 
 	bind - end-of-line
 	bind _ beginning-of-line
+	bind j- kill-line
+	bind j_ backward-kill-line
+	bind -m insert c- kill-line force-repaint
+	bind -m insert c_ backward-kill-line force-repaint
+	bind y- kill-line yank
+	bind y_ backward-kill-line yank
 
 	bind -M visual d backward-char
 	bind -M visual n forward-char
