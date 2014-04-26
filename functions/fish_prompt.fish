@@ -147,7 +147,7 @@ function prompt_vi_mode -d 'Displays the current vi mode'
     case default
       prompt_segment red black "N"
     case insert
-      prompt_segment magenta black "I"
+      prompt_segment green black "I"
     case visual
       prompt_segment purple black "V"
   end
@@ -163,6 +163,7 @@ function fish_prompt
   prompt_user
   prompt_dir
   prompt_git
+  prompt_segment white white "-"
   prompt_vi_mode
   prompt_finish
 end
