@@ -163,7 +163,7 @@ function fish_prompt
   prompt_user
   prompt_dir
   prompt_git
-  prompt_segment white white "-"
+  prompt_segment black white "λ"
   prompt_vi_mode
   prompt_finish
 end
