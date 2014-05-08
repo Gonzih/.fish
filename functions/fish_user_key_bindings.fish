@@ -57,6 +57,7 @@ function fish_user_key_bindings
 
 	bind l clear force-repaint
 	bind -M visual l clear force-repaint
+	bind -M insert \cl clear force-repaint
 
 	bind -M visual -m insert c kill-selection end-selection force-repaint
 
