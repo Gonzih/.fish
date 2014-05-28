@@ -1,3 +1,3 @@
 function vundle-update
-	vim -c "execute \"BundleInstall!\" | q | q"
+	vim -c "execute \"PluginUpdate\" | q | q"
 end

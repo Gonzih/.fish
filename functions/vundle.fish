@@ -1,3 +1,3 @@
 function vundle
-	vim -c "execute \"BundleInstall\" | qa!"
+	vim -c "execute \"PluginInstall\" | qa!"
 end
