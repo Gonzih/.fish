@@ -6,4 +6,6 @@ function dotfiles-update
 
 	vundle-update
 	rbenv-update
+
+	cd
 end
