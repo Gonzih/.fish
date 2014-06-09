@@ -1,3 +1,3 @@
 function vimt
-    vim -c "NERDTree" $arvg
+    vim .
 end
