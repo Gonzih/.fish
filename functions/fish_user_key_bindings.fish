@@ -63,4 +63,7 @@ function fish_user_key_bindings
 
 	bind -m insert c- kill-line force-repaint
 	bind -m insert c_ backward-kill-line force-repaint
+
+	bind -M normal D prevd
+	bind -M normal N nextd
 end
