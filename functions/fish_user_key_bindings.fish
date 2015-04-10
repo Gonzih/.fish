@@ -17,6 +17,7 @@ function fish_user_key_bindings
 	bind --erase dB
 	bind --erase dgE
 	bind --erase dgE
+	bind --erase \n
 
 	bind --erase j
 
@@ -66,4 +67,6 @@ function fish_user_key_bindings
 
 	bind -M normal D prevd
 	bind -M normal N nextd
+
+	bind \n execute
 end
