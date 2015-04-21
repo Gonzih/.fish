@@ -18,6 +18,7 @@ function fish_user_key_bindings
 	bind --erase dgE
 	bind --erase dgE
 	bind --erase \n
+	bind --erase l
 
 	bind --erase j
 
