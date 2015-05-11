@@ -19,6 +19,7 @@ function fish_user_key_bindings
 	bind --erase dgE
 	bind --erase \n
 	bind --erase l
+	bind --erase k
 
 	bind --erase j
 
@@ -57,9 +58,9 @@ function fish_user_key_bindings
 	bind ZZ exit
 	bind ZQ exit
 
-	bind l clear force-repaint
-	bind -M visual l clear force-repaint
-	bind -M insert \cl clear force-repaint
+	bind l 'clear' force-repaint
+	bind -M visual l end-selection 'clear' force-repaint
+	bind -M insert \cl 'clear' force-repaint
 
 	bind -M visual -m insert c kill-selection end-selection force-repaint
 
@@ -70,4 +71,7 @@ function fish_user_key_bindings
 	bind -M normal N nextd
 
 	bind \n execute
+
+	bind k forward-jump and backward-char
+	bind k backward-jump and forward-char
 end
