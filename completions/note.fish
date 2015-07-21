@@ -1,1 +1,1 @@
-complete -c note -f -A -a '(ls ~/Dropbox/notes/)'
+complete -c note -f -A -a '(ls ~/Dropbox/notes/ | sed "s/\\.org//" )'
