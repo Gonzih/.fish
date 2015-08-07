@@ -91,7 +91,7 @@ end
 
 function prompt_user -d "Display actual user if different from $default_user"
 
-  if [ "$theme_display_user" = "yes" ]
+  if [ "$theme_display_user" = "yes" -o -n "$SSH_CLIENT" ]
     if [ "$USER" != "$default_user" -o -n "$SSH_CLIENT" ]
       prompt_segment black white (whoami)
       prompt_segment white black λ
