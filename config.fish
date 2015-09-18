@@ -4,7 +4,7 @@ end
 
 status --is-interactive; and . (rbenv init -|psub)
 
-set fish_key_bindings fish_user_key_bindings
-set fish_bind_mode insert
+set -g fish_key_bindings fish_user_key_bindings
+set -g fish_bind_mode insert
 
 aliases
