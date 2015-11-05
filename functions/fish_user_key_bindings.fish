@@ -23,6 +23,11 @@ function fish_user_key_bindings
 
 	bind --erase j
 
+	bind --erase \cc
+
+  bind -M default \cc 'commandline ""'
+  bind -M insert -m default \cc force-repaint
+
 	bind t up-or-search
 	bind h down-or-search
 	bind d backward-char
