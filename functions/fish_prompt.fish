@@ -8,7 +8,7 @@
 
 ## Set this options in your config.fish (if you want to :])
 # set -g theme_display_user yes
-# set -g default_user your_normal_user
+set -g default_user gnzh
 
 
 
@@ -90,13 +90,10 @@ end
 # ===========================
 
 function prompt_user -d "Display actual user if different from $default_user"
-
-  if [ "$theme_display_user" = "yes" -o -n "$SSH_CLIENT" ]
-    if [ "$USER" != "$default_user" -o -n "$SSH_CLIENT" ]
-      prompt_segment black white (whoami)
-      prompt_segment white black λ
-      prompt_segment black white (hostname)
-    end
+  if [ "$USER" != "$default_user" -o "$theme_display_user" = "yes" -o -n "$SSH_CLIENT" -o -n "$SSH_CONNECTION" ]
+    prompt_segment black white (whoami)
+    prompt_segment white black λ
+    prompt_segment black white (hostname)
   end
 end
 
