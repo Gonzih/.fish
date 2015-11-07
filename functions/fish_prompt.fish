@@ -150,6 +150,14 @@ function prompt_vi_mode -d 'Displays the current vi mode'
   end
 end
 
+function get_ruby_version
+  if test (which rbenv 2>/dev/null)
+    rbenv version-name
+  else
+    echo ""
+  end
+end
+
 # ===========================
 # Apply theme
 # ===========================
@@ -160,7 +168,7 @@ function fish_prompt
   prompt_user
   prompt_dir
   prompt_git
-  prompt_segment black white (rbenv version-name)
+  prompt_segment black white (get_ruby_version)
   prompt_vi_mode
   prompt_finish
 end
