@@ -4,7 +4,7 @@ function dotfiles-update
 		cd $dir; and git pull
 	end
 
-	vundle-update
+	neobundle-update
 	rbenv-update
 
 	cd
