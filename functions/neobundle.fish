@@ -1,5 +1,5 @@
 function vundle
-  vim -c "execute \"NeoBundleInstall\""
+	vim +NeoBundleInstall +qall
 	cd ~/.vim/bundle/vimproc.vim; and make
-	cd
+	p
 end
