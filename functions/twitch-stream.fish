@@ -1,3 +1,3 @@
 function twitch-stream
-	livestreamer "$argv[1]"
+	livestreamer --player cvlc "$argv[1]"
 end
