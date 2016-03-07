@@ -4,6 +4,6 @@ function dropbox-upload
 	set -l fname "$uuid.$extension"
 	mkdir -p ~/Dropbox/Public/tmp/
 	cp $argv[1] ~/Dropbox/Public/tmp/$fname
-	echo https://dl.dropboxusercontent.com/u/4109351/tmp/$fname | xclip -selection -i
+	echo https://dl.dropboxusercontent.com/u/4109351/tmp/$fname | xclip -selection clipboard -i
 	find ~/Dropbox/Public/tmp -type f -mtime +30 -delete
 end
