@@ -1,6 +1,8 @@
 function fish_user_key_bindings
 	fish_vi_key_bindings
 
+	bind --erase \n
+
 	bind --erase dd
 	bind --erase D
 	bind --erase d\x24
@@ -17,7 +19,6 @@ function fish_user_key_bindings
 	bind --erase dB
 	bind --erase dgE
 	bind --erase dgE
-	bind --erase \n
 	bind --erase l
 	bind --erase k
 
@@ -25,8 +26,9 @@ function fish_user_key_bindings
 
 	bind --erase \cc
 
-  bind -M default \cc 'commandline ""'
-  bind -M insert -m default \cc force-repaint
+	bind \n execute
+
+	bind -M insert -m default \cc force-repaint
 
 	bind t up-or-search
 	bind h down-or-search
@@ -74,8 +76,6 @@ function fish_user_key_bindings
 
 	bind -M normal D prevd
 	bind -M normal N nextd
-
-	bind \n execute
 
 	bind k forward-jump and backward-char
 	bind k backward-jump and forward-char
