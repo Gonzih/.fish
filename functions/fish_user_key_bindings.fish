@@ -27,6 +27,7 @@ function fish_user_key_bindings
 	bind --erase \cc
 
 	bind \n execute
+	bind \r execute
 
 	bind -M insert -m default \cc force-repaint
 
