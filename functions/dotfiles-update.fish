@@ -6,7 +6,7 @@ function dotfiles-update
 		cd $dir; and git stash
 	end
 
-	cd ~; and git pull; and sudo ansible-playbook --ask-sudo-pass provision.yml
+	cd ~; and git pull; and ansible-playbook --ask-sudo-pass provision.yml
 
 	for dir in $dirs
 		echo "Stashing $dir"
