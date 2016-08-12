@@ -15,6 +15,7 @@ function dotfiles-update
 
 	rbenv-update
 	neobundle-update
+	xmonad --recompile
 
 	cd
 end
