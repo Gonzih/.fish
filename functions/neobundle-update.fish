@@ -1,3 +1,3 @@
 function neobundle-update
-	vim +NeoBundleInstall! +qall
+	vim +NeoBundleUpdate +qall
 end
