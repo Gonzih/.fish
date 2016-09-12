@@ -7,6 +7,8 @@ function fish_user_key_bindings
 	bind --erase D
 	bind --erase d\x24
 	bind --erase d\x5e
+	bind --erase d\$
+	bind --erase d\^
 	bind --erase dw
 	bind --erase dW
 	bind --erase diw
@@ -17,7 +19,7 @@ function fish_user_key_bindings
 	bind --erase dE
 	bind --erase db
 	bind --erase dB
-	bind --erase dgE
+	bind --erase dge
 	bind --erase dgE
 	bind --erase l
 	bind --erase k
