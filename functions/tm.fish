@@ -7,5 +7,5 @@ function tm
 
   set -l name $__TM_SESSION_NAME
 
-  tmux -2 -u has -t $name; and tmux -2 -u attach -t $name; or tmux -2 -u new -s $name
+  tmux -2 -u has -t $name; and tmux -2 -u attach -d -t $name; or tmux -2 -u new -s $name
 end
