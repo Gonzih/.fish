@@ -3,4 +3,5 @@ function aliases
 	alias n=nextd
 	alias e="$EDITOR"
 	alias em="emacsclient -t"
+	alias tailf="tail -f"
 end
