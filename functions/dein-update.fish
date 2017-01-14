@@ -1,4 +1,3 @@
 function dein-update
-	vim '+call dein#update()' '+qall'
-	p
+	cd /tmp; and nohup vim '+call dein#update()' '+qall'
 end

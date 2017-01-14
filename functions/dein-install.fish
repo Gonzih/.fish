@@ -1,3 +1,3 @@
 function dein-install
-	vim '+call dein#install()' '+qall'
+	cd /tmp; and nohup vim '+call dein#install()' '+qall'
 end
