@@ -1,3 +1,3 @@
 function dein-update
-	cd /tmp; and nohup vim '+call dein#update()' '+qall'
+	vim -E -s -c 'source ~/.vimrc' -c 'call dein#update()' -c 'qall'
 end

@@ -1,3 +1,3 @@
 function dein-install
-	cd /tmp; and nohup vim '+call dein#install()' '+qall'
+	vim -E -s -c 'source ~/.vimrc' -c 'call dein#install()' -c 'qall'
 end
