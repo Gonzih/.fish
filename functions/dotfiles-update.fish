@@ -14,7 +14,7 @@ function dotfiles-update
 	end
 
 	rbenv-update
-	dein-update
+	# dein-update
 	xmonad --recompile
 
 	cd
