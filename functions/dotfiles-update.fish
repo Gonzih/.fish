@@ -16,7 +16,7 @@ function dotfiles-update
 	rbenv-update
 	dein-update
 	xmonad --recompile; and env DISPLAY:=0 xmonad --restart
-	xrdb -merge ~/.Xresources
+	env DISPLAY:=0 xrdb -merge ~/.Xresources
 
 	cd
 end
