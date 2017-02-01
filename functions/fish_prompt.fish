@@ -134,7 +134,7 @@ function prompt_status -d "the symbols for a non zero exit status, root and back
 
     # Jobs display
     if [ (jobs -l | wc -l) -gt 0 ]
-      prompt_segment black cyan "⚙"
+      prompt_segment black cyan "⊛"
     end
 end
 
