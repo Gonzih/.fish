@@ -11,7 +11,7 @@ set -g fish_bind_mode insert
 
 set -gx GOPATH /home/gnzh/go-projects
 
-set font_size_file ~/.urxvt-font-size
+set urxvt_font_size_file ~/.urxvt-font-size
 if test -f $urxvt_font_size_file
 	fsize (cat $urxvt_font_size_file)
 end
