@@ -110,7 +110,7 @@ function prompt_git -d "Display the actual git state"
     set ref (git symbolic-ref HEAD 2> /dev/null)
     if [ $status -gt 0 ]
       set -l branch (git show-ref --head -s --abbrev |head -n1 2> /dev/null)
-      set ref "➦ $branch "
+      set ref "˨ $branch "
     end
     set -l branch (echo $ref | sed  's-refs/heads/- -')
     if [ "$dirty" != "" ]
