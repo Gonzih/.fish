@@ -1,4 +1,4 @@
 function psg
 	ps aux | head -n 1
-	ps aux | grep $argv | grep -v grep
+	ps aux | awk "/awk/ {next}; /$argv/"
 end
