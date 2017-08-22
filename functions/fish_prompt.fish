@@ -150,9 +150,9 @@ function prompt_vi_mode -d 'Displays the current vi mode'
   end
 end
 
-function get_ruby_version
-  if test (which rbenv 2>/dev/null)
-    rbenv version-name
+function get_go_version
+  if test (which go 2>/dev/null)
+    go version | sed 's/go version go\(.*\) linux.*/\1/'
   else
     echo ""
   end
@@ -168,7 +168,7 @@ function fish_prompt
   prompt_user
   prompt_dir
   prompt_git
-  prompt_segment black white (get_ruby_version)
+  prompt_segment black white (get_go_version)
   prompt_vi_mode
   prompt_finish
 end
