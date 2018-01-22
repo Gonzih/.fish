@@ -82,6 +82,7 @@ function prompt_finish -d "Close open segments"
     echo -n "$segment_separator "
   end
   set -g current_bg NONE
+  set_color normal
 end
 
 
