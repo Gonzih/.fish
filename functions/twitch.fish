@@ -5,5 +5,5 @@ function twitch
 		set quality best
 	end
 
-	echo streamlink "https://twitch.tv/$argv[1]" $quality
+	streamlink "https://twitch.tv/$argv[1]" $quality
 end
