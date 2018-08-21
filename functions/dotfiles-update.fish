@@ -1,3 +1,5 @@
 function dotfiles-update
-	cd ~; and git pull; and ansible-playbook provision.yml; and p
+	cd ~; and git pull; and ansible-playbook provision.yml
+
+	echo "done!"
 end
