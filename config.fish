@@ -19,4 +19,3 @@ end
 aliases
 
 start-gpg-agent
-start-ssh-agent
