@@ -10,6 +10,7 @@ set -g fish_key_bindings fish_user_key_bindings
 set -g fish_bind_mode insert
 
 set -gx GOPATH /home/gnzh/go-projects
+set -gx ANDROID_HOME /home/gnzh/Android/Sdk/
 
 set urxvt_font_size_file ~/.urxvt-font-size
 if test -f $urxvt_font_size_file
