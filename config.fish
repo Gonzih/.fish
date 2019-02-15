@@ -20,3 +20,5 @@ end
 aliases
 
 start-gpg-agent
+
+myxkbmap
