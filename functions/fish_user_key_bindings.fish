@@ -25,6 +25,8 @@ function fish_user_key_bindings
 	bind --erase j
 
 	bind --erase \cc
+	bind --erase \cr
+	bind --erase \ch
 
 	bind \n execute
 	bind \r execute
@@ -65,6 +67,7 @@ function fish_user_key_bindings
 
 	bind ZZ exit
 	bind ZQ exit
+	bind \;q exit
 
 	bind l 'clear' force-repaint
 	bind -M visual l end-selection 'clear' force-repaint
