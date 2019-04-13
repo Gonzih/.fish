@@ -23,6 +23,6 @@ start-gpg-agent
 
 myxkbmap
 
-set -U fish_user_paths /home/gnzh/bin /run/wrappers/bin /home/gnzh/.nix-profile/bin /nix/var/nix/profiles/default/bin /run/current-system/sw/bin /etc/profiles/per-user/gnzh/bin /home/gnzh/go/bin/
+set -Ux fish_user_paths /home/gnzh/bin /run/wrappers/bin /home/gnzh/.nix-profile/bin /nix/var/nix/profiles/default/bin /run/current-system/sw/bin /etc/profiles/per-user/gnzh/bin /home/gnzh/go/bin/
 # /home/gnzh/.vim/bundle/dein.vim/repos/github.com/liquidz/vim-iced/bin
 # /home/gnzh/.yarn/bin
