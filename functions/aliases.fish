@@ -4,4 +4,7 @@ function aliases
 	alias e="$EDITOR"
 	alias em="emacsclient -t"
 	alias tailf="tail -f"
+	alias k=kubectl
+	alias kx=kubectx
+	alias kns=kubens
 end
