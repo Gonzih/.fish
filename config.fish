@@ -28,3 +28,6 @@ set -Ux fish_user_paths /home/gnzh/bin /run/wrappers/bin /home/gnzh/.nix-profile
 
 # /home/gnzh/.vim/bundle/dein.vim/repos/github.com/liquidz/vim-iced/bin
 # /home/gnzh/.yarn/bin
+
+# opam configuration
+source /home/gnzh/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
