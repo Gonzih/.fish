@@ -25,13 +25,15 @@ function fish_user_key_bindings
 	bind --erase j
 
 	bind --erase \cc
+	bind --preset --erase \cc
 	bind --erase \cr
 	bind --erase \ch
 
 	bind \n execute
 	bind \r execute
 
-	bind -M insert -m default \cc force-repaint
+	bind --preset -M insert -m default \cc force-repaint
+	bind --preset -M default \cc __fish_cancel_commandline
 
 	bind t up-or-search
 	bind h down-or-search
