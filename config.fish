@@ -25,7 +25,7 @@ myxkbmap
 
 set -Ux GO111MODULE on
 set -Ux fish_user_paths /home/gnzh/bin /run/wrappers/bin /home/gnzh/.nix-profile/bin /nix/var/nix/profiles/default/bin /run/current-system/sw/bin /etc/profiles/per-user/gnzh/bin /home/gnzh/go/bin/ /home/gnzh/.cargo/bin/ /home/gnzh/.linkerd2/bin
-set -Ux EDITOR vim
+set -gx EDITOR vim
 
 # /home/gnzh/.vim/bundle/dein.vim/repos/github.com/liquidz/vim-iced/bin
 # /home/gnzh/.yarn/bin
