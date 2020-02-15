@@ -67,9 +67,10 @@ function fish_user_key_bindings
 	bind -M visual d backward-char
 	bind -M visual n forward-char
 
-	bind ZZ exit
-	bind ZQ exit
-	bind \;q exit
+	bind -m insert ZZ exit
+	bind -m insert ZQ exit
+	bind -m insert \;q exit
+	bind -m insert \cd exit
 
 	bind l 'clear' force-repaint
 	bind -M visual l end-selection 'clear' force-repaint
