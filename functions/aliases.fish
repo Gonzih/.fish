@@ -7,5 +7,4 @@ function aliases
 	alias k=kubectl
 	alias kx=kubectx
 	alias kns=kubens
-	alias mc=vifm
 end
