@@ -9,8 +9,8 @@ end
 set -g fish_key_bindings fish_user_key_bindings
 set -g fish_bind_mode insert
 
-set -gx GOPATH /home/gnzh/go
-set -gx ANDROID_HOME /home/gnzh/Android/Sdk/
+set -gx GOPATH $HOME/go
+set -gx ANDROID_HOME $HOME/Android/Sdk/
 
 set urxvt_font_size_file ~/.urxvt-font-size
 if test -f $urxvt_font_size_file
@@ -25,11 +25,5 @@ myxkbmap
 
 set -Ux GO111MODULE on
 set -Ux NPM_PACKAGES $HOME/.npm-packages
-set -Ux fish_user_paths /home/gnzh/bin /run/wrappers/bin /home/gnzh/.nix-profile/bin /nix/var/nix/profiles/default/bin /run/current-system/sw/bin /etc/profiles/per-user/gnzh/bin /home/gnzh/go/bin/ /home/gnzh/.cargo/bin/ /home/gnzh/.linkerd2/bin /home/gnzh/.npm-packages/bin
+set -Ux fish_user_paths $HOME/bin /run/wrappers/bin $HOME/.nix-profile/bin /nix/var/nix/profiles/default/bin /run/current-system/sw/bin /etc/profiles/per-user/gnzh/bin $HOME/go/bin/ $HOME/.cargo/bin/ $HOME/.linkerd2/bin $HOME/.npm-packages/bin $HOME/.pub-cache/bin
 set -gx EDITOR vim
-
-# /home/gnzh/.vim/bundle/dein.vim/repos/github.com/liquidz/vim-iced/bin
-# /home/gnzh/.yarn/bin
-
-# opam configuration
-source /home/gnzh/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
