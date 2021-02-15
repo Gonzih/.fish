@@ -1,1 +1,1 @@
-/home/gnzh/.vim/bundle/dein.vim/repos/github.com/junegunn/fzf/shell/key-bindings.fish
+/home/gnzh/.cache/dein/repos/github.com/junegunn/fzf/shell/key-bindings.fish
