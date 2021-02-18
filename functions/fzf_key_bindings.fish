@@ -1,1 +1,1 @@
-/home/gnzh/.cache/dein/repos/github.com/junegunn/fzf/shell/key-bindings.fish
+/home/gnzh/.config/nixpkgs/nix/lib/dotfiles/.dein/repos/github.com/junegunn/fzf/shell/key-bindings.fish
