@@ -1,5 +1,4 @@
 function dotfiles-update
-	cd ~; and git pull; and ansible-playbook provision.yml
-
-	echo "done!"
+	cd ~/.config/nixpkgs
+	make dotfiles-update
 end
