@@ -1,5 +1,4 @@
 function aliases
-	alias vim=nvim
 	alias p=prevd
 	alias n=nextd
 	alias e="$EDITOR"
