@@ -151,9 +151,9 @@ function prompt_vi_mode -d 'Displays the current vi mode'
   end
 end
 
-function get_go_version
-  if test (which go 2>/dev/null)
-    uname -a | sed 's/.*\([0-9]\+\.[0-9]\+\.[0-9]\+\).*/\1/'
+function get_rust_version
+  if test (which rustc 2>/dev/null)
+    rustc --version | sed 's/rustc.\(.*\).(.*)/\1/'
   else
     echo ""
   end
@@ -169,7 +169,7 @@ function fish_prompt
   prompt_user
   prompt_dir
   prompt_git
-  prompt_segment black white (get_go_version)
+  prompt_segment black white (get_rust_version)
   prompt_vi_mode
   prompt_finish
 end
