@@ -88,4 +88,4 @@ function fish_user_key_bindings
 	bind k backward-jump and forward-char
 end
 
-fzf_key_bindings
+#fzf_key_bindings

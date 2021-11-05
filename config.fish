@@ -30,4 +30,4 @@ set -gx EDITOR nvim
 
 set fish_function_path $fish_function_path $HOME/.config/plugin-foreign-env/functions
 
-fenv source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
+#fenv source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
