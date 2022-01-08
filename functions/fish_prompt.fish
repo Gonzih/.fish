@@ -153,9 +153,31 @@ end
 
 function get_rust_version
   if test (which rustc 2>/dev/null)
-    rustc --version | sed 's/rustc.\(.*\).(.*)/\1/'
+    rustc --version | sed 's/rustc.\(.*\).(.*)/rust \1/'
   else
     echo ""
+  end
+end
+
+function get_go_version
+  if test (which go 2>/dev/null)
+    go version | sed 's/go version go\(.*\) linux.*/go \1/'
+  else
+    echo ""
+  end
+end
+
+function uname_version
+  uname -a | sed 's/.*\([0-9]\+\.[0-9]\+\.[0-9]\+\).*/linux \1/'
+end
+
+function print_version
+  if test -e Cargo.toml
+    get_rust_version
+  else if test -e go.mod
+    get_go_version
+  else
+    uname_version
   end
 end
 
@@ -169,7 +191,7 @@ function fish_prompt
   prompt_user
   prompt_dir
   prompt_git
-  prompt_segment black white (get_rust_version)
+  prompt_segment black white (print_version)
   prompt_vi_mode
   prompt_finish
 end
