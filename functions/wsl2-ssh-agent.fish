@@ -4,7 +4,7 @@ function wsl2-ssh-agent
       rm -f "$SSH_AUTH_SOCK"
       set wsl2_ssh_pageant_bin "$HOME/.ssh/wsl2-ssh-pageant.exe"
       if test -x "$wsl2_ssh_pageant_bin";
-        setsid nohup socat UNIX-LISTEN:"$SSH_AUTH_SOCK,fork" EXEC:"$wsl2_ssh_pageant_bin" >/dev/null 2>&1 &
+        setsid nohup socat UNIX-LISTEN:"$SSH_AUTH_SOCK,fork" EXEC:"$wsl2_ssh_pageant_bin" >/home/gnzh/ssh-log.out 2>&1 &
       else
         echo >&2 "WARNING: $wsl2_ssh_pageant_bin is not executable."
       end
@@ -15,8 +15,9 @@ function wsl2-ssh-agent
     if not ss -a | grep -q "$GPG_AGENT_SOCK";
       rm -rf "$GPG_AGENT_SOCK"
       set wsl2_ssh_pageant_bin "$HOME/.ssh/wsl2-ssh-pageant.exe"
+	  set config_path "C\:/Users/gnzh/AppData/Local/gnupg"
       if test -x "$wsl2_ssh_pageant_bin";
-        setsid nohup socat UNIX-LISTEN:"$GPG_AGENT_SOCK,fork" EXEC:"$wsl2_ssh_pageant_bin --gpg S.gpg-agent" >/dev/null 2>&1 &
+        setsid nohup socat UNIX-LISTEN:"$GPG_AGENT_SOCK,fork" EXEC:"$wsl2_ssh_pageant_bin -gpgConfigBasepath $config_path --gpg S.gpg-agent" >/home/gnzh/gpg-log.out 2>&1 &
       else
         echo >&2 "WARNING: $wsl2_ssh_pageant_bin is not executable."
       end
