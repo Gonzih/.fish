@@ -1,7 +1,7 @@
 function aliases
     alias p=prevd
     alias n=nextd
-    alias e="$EDITOR"
+    alias e="emacsclient -t"
     alias et="emacsclient -t"
     alias emacs-daemon="emacs --daemon"
     alias emacs-stop-daemon="emacsclient -e '(kill-emacs)'"
