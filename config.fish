@@ -22,7 +22,7 @@ myxkbmap
 set -Ux GO111MODULE on
 set -Ux NPM_PACKAGES $HOME/.npm-packages
 set -Ux fish_user_paths $HOME/bin /run/wrappers/bin $HOME/.nix-profile/bin /nix/var/nix/profiles/default/bin /run/current-system/sw/bin /etc/profiles/per-user/gnzh/bin /usr/local/bin $HOME/go/bin/ $HOME/.cargo/bin/ $HOME/.linkerd2/bin $HOME/.npm-packages/bin $HOME/.pub-cache/bin $HOME/.local/bin $HOME/.local/share/solana/install/active_release/bin $HOME/.deno/bin
-set -gx EDITOR nvim
+set -gx EDITOR emacsclient -t
 
 set fish_function_path $fish_function_path $HOME/.config/plugin-foreign-env/functions
 
