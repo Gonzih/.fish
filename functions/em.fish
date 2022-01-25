@@ -4,5 +4,5 @@ function em
         setxkbmap 'us(dvp)'
     end
 
-    exec emacsclient --create-frame $argv
+    emacsclient --create-frame $argv
 end
