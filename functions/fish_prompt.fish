@@ -168,7 +168,12 @@ function get_go_version
 end
 
 function uname_version
-  uname -a | sed 's/.*\([0-9]\+\.[0-9]\+\.[0-9]\+\).*/linux \1/'
+  switch (uname)
+    case Linux
+      uname -a | sed 's/.*\([0-9]\+\.[0-9]\+\.[0-9]\+\).*/linux \1/'
+    case Darwin
+      uname -a | sed 's/.*Darwin Kernel Version \([0-9.]*\):.*/darwin \1/'
+  end
 end
 
 function print_version
