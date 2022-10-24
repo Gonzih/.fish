@@ -172,7 +172,7 @@ function uname_version
     case Linux
       uname -a | sed 's/.*\([0-9]\+\.[0-9]\+\.[0-9]\+\).*/linux \1/'
     case Darwin
-      uname -a | sed 's/.*Darwin Kernel Version \([0-9.]*\):.*/darwin \1/'
+      sw_vers | grep ProductVersion | sed 's/[^0-9.]*\([0-9.]*\)/osx \1/'
   end
 end
 
