@@ -161,7 +161,7 @@ end
 
 function get_go_version
   if test (which go 2>/dev/null)
-    go version | sed 's/go version go\(.*\) linux.*/go \1/'
+    go version | sed 's/^go version go\(.*\)$/go \1/'
   else
     echo ""
   end
