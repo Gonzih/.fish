@@ -2,7 +2,7 @@ if test $TERM != "screen-256color"
 	set -gx TERM xterm-256color
 end
 
-set -g fish_key_bindings fish_user_key_bindings
+set -g fish_key_bindings fish_vi_key_bindings
 set -g fish_bind_mode insert
 
 set -gx GOPATH $HOME/go

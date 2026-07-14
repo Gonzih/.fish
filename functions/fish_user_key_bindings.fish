@@ -1,6 +1,4 @@
 function fish_user_key_bindings
-	fish_vi_key_bindings
-
 	bind --erase dd
 	bind --erase D
 	bind --erase d\x24
@@ -55,14 +53,14 @@ function fish_user_key_bindings
 	bind jgE backward-kill-word
 	bind jgE backward-kill-word
 
-	bind - end-of-line
+	bind minus end-of-line
 	bind _ beginning-of-line
-	bind j- kill-line
-	bind j_ backward-kill-line
-	bind -m insert c- kill-line force-repaint
-	bind -m insert c_ backward-kill-line force-repaint
-	bind y- kill-line yank
-	bind y_ backward-kill-line yank
+	bind j,minus kill-line
+	bind j,_ backward-kill-line
+	bind -m insert c,minus kill-line force-repaint
+	bind -m insert c,_ backward-kill-line force-repaint
+	bind y,minus kill-line yank
+	bind y,_ backward-kill-line yank
 
 	bind -M visual d backward-char
 	bind -M visual n forward-char
@@ -77,9 +75,6 @@ function fish_user_key_bindings
 	bind -M insert \cl 'clear' force-repaint
 
 	bind -M visual -m insert c kill-selection end-selection force-repaint
-
-	bind -m insert c- kill-line force-repaint
-	bind -m insert c_ backward-kill-line force-repaint
 
 	bind -M normal D prevd
 	bind -M normal N nextd
