@@ -3,3 +3,6 @@ fish_read_history
 generated_completions/
 fishd.*
 fish_variables
+
+# Fish upgrade migration state stays local.
+/conf.d/fish_frozen_key_bindings.fish
